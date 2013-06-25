@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css">
+<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
+<link rel="stylesheet" href="jquery.mobile-1.1.0.custom.css?" />
+</head>
+<body>
+
+<div id="Home" data-url="Home" data-role="page">
+<div data-role="header" data-theme="e">
+<h1>Mundo Apuestas</h1>
+</div>
+
+<div data-role="content">
+
+<ul data-role="listview">
+<li><a href="#Equipos">Equipos</a></li>
+<li><a href="ProximasApuestas">Proximas Apuestas</a></li>
+<li><a href="HotBets">Consejos</a></li>
+<li><a href="Contacta">Contacta</a></li>
+</ul>
+<br><br>Edit this page by modifying in the center panel, or delete the page and start with a fresh one.
+
+</div>
+
+<div data-role="footer" data-position="fixed">
+<h1>ViperLokBets</h1>
+</div>
+</div>
+
+<div id="Equipos" data-url="Equipos" data-role="page">
+<div data-role="header">
+<h1>Equipos</h1>
+<div data-role="navbar">
+<ul>
+<li><a href="" class="ui-btn-active">Equipos</a></li>
+<li><a href="#EquiposBusqueda">Busqueda Rapida</a></li>
+</ul>
+</div>
+
+</div>
+
+<div data-role="content">
+<div data-role="fieldcontain">
+<label for="sel_tw19"></label>
+<select name="sel_tw19" id="sel_tw19" data-mini="true">
+<option value="Deporte" selected="selected">Deporte</option><option value="Futbol">Futbol</option><option value="Baloncesto">Baloncesto</option></select>
+</div>
+<div data-role="fieldcontain">
+<label for="sel_tw22"></label>
+<select name="sel_tw22" id="sel_tw22" data-mini="true">
+<option value="Pais">Pais</option><option value="España">España</option><option value="Italia">Italia</option></select>
+</div>
+<div data-role="fieldcontain">
+<label for="sel_tw23"></label>
+<select name="sel_tw23" id="sel_tw23" data-native-menu="false" data-mini="true">
+<option value="Liga">Liga</option></select>
+</div>
+<div data-role="fieldcontain">
+<label for="sel_tw24"></label>
+<select name="sel_tw24" id="sel_tw24" data-native-menu="false" data-mini="true">
+<option value="Equipo">Equipo</option></select>
+</div>
+
+</div>
+
+<div data-role="footer" data-position="fixed">
+<h1>@ViperLokAp</h1>
+<div data-role="navbar">
+<ul>
+</ul>
+</div>
+
+</div>
+</div>
+
+<div id="EquiposBusqueda" data-url="EquiposBusqueda" data-role="page">
+<div data-role="header">
+<h1>Equipos</h1>
+<div data-role="navbar">
+<ul>
+<li><a href="#Equipos">Equipos</a></li>
+<li><a href="#EquiposBusqueda" class="ui-btn-active">Busqueda Rapida</a></li>
+</ul>
+</div>
+
+</div>
+
+<div data-role="content">
+<div data-role="fieldcontain">
+<label for="inp_tw27">Nombre Equipo</label>
+<input type="text" name="inp_tw27" id="inp_tw27" value="Equipo" data-mini="true"/>
+</div>
+<input type="reset" data-icon="arrow-r" data-iconpos="right" value="Buscar"/>
+
+<div data-role="controlgroup" data-type="horizontal">
+</div>
+<input type="button" value="Button"/>
+
+</div></div>
+
+<div id="ListaEquipos" data-url="ListaEquipos" data-role="page">
+<div data-role="header">
+<h1>Equipos</h1>
+<div data-role="navbar">
+<ul>
+<li><a href="" class="ui-btn-active">Listado</a></li>
+</ul>
+</div>
+
+</div>
+
+<div data-role="content">
+
+<ul data-role="listview" data-inset="true">
+<li><a href="DetalleEquipoHome"><h3>Real Madrid C.F.</h3><p>España - Futbol</p></a></li>
+<li><a href="DetalleEquipoHome"><h3>Real Madrid C.F.</h3><p>España - Baloncesto</p></a></li>
+<li><a href="DetalleEquipoHome"><h3>Real Sociedad</h3><p>España - Futbol</p></a></li>
+<li><a href="DetalleEquipoHome"><h3>Real Zaragoza</h3><p>España - Futbol</p></a></li>
+<li><a href="DetalleEquipoHome"><h3>Real Betis</h3><p>España - Futbol</p></a></li>
+</ul>
+
+</div></div>
+
+</body>
+</html>

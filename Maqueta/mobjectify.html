@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css">
+<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
+<link rel="stylesheet" href="jquery.mobile-1.1.0.custom.css?" />
+<link rel="stylesheet" href="jquery.mobile.theme.overrides.css" />
+</head>
+<body>
+
+<div id="Home" data-url="Home" data-role="page">
+<div data-role="header" data-theme="d">
+<h1>Mundo Apuestas</h1>
+</div>
+
+<div data-role="content">
+
+<ul data-role="listview">
+<li><a href="#Equipos">Equipos</a></li>
+<li><a href="#ProximasApuestas">Proximas Apuestas</a></li>
+<li><a href="#HotBets">Consejos</a></li>
+<li><a href="#Contacta">Contacta</a></li>
+</ul>
+
+</div>
+
+<div data-role="footer" data-position="fixed">
+<h1>@ViperLokBets</h1>
+</div>
+</div>
+
+<div id="Equipos" data-url="Equipos" data-role="page">
+<div data-role="header">
+<h1>Equipos</h1>
+<a href="#Home" data-role="button" data-icon="home" data-iconpos="notext"></a>
+<div data-role="navbar">
+<ul>
+<li><a href="" class="ui-btn-active">Equipos</a></li>
+<li><a href="#EquiposBusqueda">Busqueda Rapida</a></li>
+</ul>
+</div>
+
+</div>
+
+<div data-role="content">
+<div data-role="fieldcontain">
+<label for="sel_tw19"></label>
+<select name="sel_tw19" id="sel_tw19" data-mini="true">
+<option value="Deporte" selected="selected">Deporte</option><option value="Futbol">Futbol</option><option value="Baloncesto">Baloncesto</option></select>
+</div>
+<div data-role="fieldcontain">
+<label for="sel_tw22"></label>
+<select name="sel_tw22" id="sel_tw22" data-mini="true">
+<option value="Pais">Pais</option><option value="España">España</option><option value="Italia">Italia</option></select>
+</div>
+<div data-role="fieldcontain">
+<label for="sel_tw23"></label>
+<select name="sel_tw23" id="sel_tw23" data-native-menu="false" data-mini="true">
+<option value="Liga">Liga</option></select>
+</div>
+<div data-role="fieldcontain">
+<label for="sel_tw24"></label>
+<select name="sel_tw24" id="sel_tw24" data-native-menu="false" data-mini="true">
+<option value="Equipo">Equipo</option></select>
+</div>
+
+
+</div>
+
+<div data-role="footer" data-position="fixed">
+<h1>@ViperLokBets</h1>
+<div data-role="navbar">
+<ul>
+</ul>
+</div>
+
+</div>
+</div>
+
+<div id="EquiposBusqueda" data-url="EquiposBusqueda" data-role="page">
+<div data-role="header">
+<a href="#Home" data-role="button" data-icon="home" data-iconpos="notext"></a>
+<h1>Equipos</h1>
+<div data-role="navbar">
+<ul>
+<li><a href="#Equipos">Equipos</a></li>
+<li><a href="#EquiposBusqueda" class="ui-btn-active">Busqueda Rapida</a></li>
+</ul>
+</div>
+
+</div>
+
+<div data-role="content">
+<div data-role="fieldcontain">
+<label for="inp_tw27">Nombre Equipo</label>
+<input type="text" name="inp_tw27" id="inp_tw27" value="Equipo" data-mini="true"/>
+</div>
+<a href="#ListaEquipos" data-role="button" data-icon="arrow-r" data-iconpos="right">Buscar</a>
+
+</div>
+
+<div data-role="footer" data-position="fixed">
+<h1>@ViperLokBets</h1>
+</div>
+</div>
+
+<div id="ListaEquipos" data-url="ListaEquipos" data-role="page">
+<div data-role="header">
+<h1>Equipos</h1>
+<div data-role="navbar">
+<ul>
+<li><a href="" class="ui-btn-active">Listado</a></li>
+</ul>
+</div>
+
+</div>
+
+<div data-role="content">
+
+<ul data-role="listview" data-inset="true" data-filter="true">
+<li><a href="#DetalleEquipoHome"><h3>Real Betis</h3><p>España - Futbol</p></a></li>
+<li><a href="#DetalleEquipoHome"><h3>Real Madrid C.F.</h3><p>España - Futbol</p></a></li>
+<li><a href="DetalleEquipoHome"><h3>Real Madrid C.F.</h3><p>España - Baloncesto</p></a></li>
+<li><a href="#DetalleEquipoHome"><h3>Real Sociedad</h3><p>España - Futbol</p></a></li>
+<li><a href="#DetalleEquipoHome"><h3>Real Zaragoza</h3><p>España - Futbol</p></a></li>
+</ul>
+
+</div>
+
+<div data-role="footer" data-position="fixed">
+<h1>@ViperLokBets</h1>
+</div>
+</div>
+
+<div id="Contacta" data-url="Contacta" data-role="page">
+<div data-role="header">
+<a href="#Home" data-role="button" data-icon="home" data-iconpos="notext"></a>
+
+<h1>Contacta</h1>
+</div>
+
+<div data-role="content">
+<span><strong>Esta es una aplicación cuyo único fin es ayudar a posibles aficionados a apuestas deportivas aportando datos estadísticos.<br><br>Si encuentran cualquier error o quieren realizar alguna propuesta, por favor contactar con ViperLokAp@gmail.com, y estaremos encantados de leerles.<br><br>Recordamos siempre ¡ Apuesten con la Cabeza !<br><br>Un saludo</strong></span>
+
+</div>
+
+<div data-role="footer" data-position="fixed">
+<h1>@ViperLokBets</h1>
+</div>
+</div>
+
+<div id="DetalleEquipoHome" data-url="DetalleEquipoHome" data-role="page">
+<div data-role="header">
+<a href="#Home" data-role="button" data-icon="home" data-iconpos="notext"></a>
+<a href="#EquiposBusqueda" data-role="button" data-icon="arrow-l" data-iconpos="notext"></a>
+<h1>Real Sociedad C. F.</h1>
+</div>
+
+<div data-role="content">
+
+<ul data-role="listview" data-inset="true">
+<li><a href="#DetalleEquipo1x2">1x2</a></li>
+<li><a href="#DetalleEquipoGoles">Goles</a></li>
+<li><a href="#DetalleEquipoRachas">Rachas</a></li>
+<li><a href="#DetalleEquipoJugadores">Jugadores</a></li>
+</ul>
+
+
+
+</div>
+
+<div data-role="footer" data-position="fixed">
+<h1>@ViperLokBets</h1>
+</div>
+</div>
+
+<div id="DetalleEquipo1x2" data-url="DetalleEquipo1x2" data-role="page">
+<div data-role="header">
+<a href="#Home" data-role="button" data-icon="home" data-iconpos="notext"></a>
+<a href="#DetalleEquipoHome" data-role="button" data-icon="arrow-l" data-iconpos="notext"></a>
+<h1>Real Sociedad C. F.</h1>
+</div>
+
+<div data-role="content">
+
+<ul data-role="listview" data-inset="true">
+<li><h3>Local (2012 - 2013)</h3><p>1 - 11 (60%)       
+X - 4 (20%)        
+2 - 4 (20%)</p></li>
+<li><h3>Visitante (2012 - 2013)</h3><p>1 - 8 (42%) ###
+X - 5 (26%) ###
+2 - 6 (32%)</p></li>
+<li><h3>Total (2012 - 2013)</h3><p>1 - 18 (45%)  ___
+X - 12 (35%) ___
+2 - 8 (20%)</p></li>
+</ul>
+<input type="submit" data-iconpos="right" data-inline="true" value="Otras Temporadas"/>
+
+</div>
+
+<div data-role="footer" data-position="fixed">
+<h1>@ViperLokBets</h1>
+<div data-role="navbar">
+<ul>
+<li><a href="#DetalleEquipoGoles">Goles</a></li>
+<li><a href="#DetalleEquipoRachas">Rachas</a></li>
+<li><a href="#DetalleEquipoJugadores">Jugadores</a></li>
+</ul>
+</div>
+
+</div>
+</div>
+
+<div id="DetalleEquipoGoles" data-url="DetalleEquipoGoles" data-role="page">
+<div data-role="header" data-position="fixed">
+<a href="#Home" data-role="button" data-icon="home" data-iconpos="notext"></a>
+<a href="#DetalleEquipoHome" data-role="button" data-icon="arrow-l" data-iconpos="notext"></a>
+<h1>Real Sociedad C.F. </h1>
+</div>
+
+<div data-role="content">
+<table data-role="table" id="goles" data-mode="reflow" BORDER=1 CELLPADDING=3 CELLSPACING=1 align="center">
+  <thead>
+    <tr>
+      <th>Goles</th>
+	  <th>Total</th>
+	  <th>Media</th>
+      <th><abbr title="Primera Parte">1P</abbr></th>
+	  <th><abbr title="Media Primera Parte">M 1P</abbr></th>
+	  <th><abbr title="Segunda Parte">Media</abbr></th>
+	  <th><abbr title="Media Segunda Parte">M 2P</abbr></th>
+
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Totales</th>
+      <th>83</th>
+	  <th>2.18</th>
+	  <th>55</th>
+      <th>2.9</th>
+	  <th>28</th>
+	  <th>1.47</th>
+    </tr>
+	<tr>
+      <th>Local</th>
+      <th>60</th>
+	  <th>3.15</th>
+	  <th>38</th>
+      <th>2.0</th>
+	  <th>22</th>
+	  <th>1.15</th>
+    </tr>    
+	<tr>
+      <th>Visitante</th>
+      <th>23</th>
+	  <th>1.21</th>
+	  <th>17</th>
+      <th>0.9</th>
+	  <th>4</th>
+	  <th>0.2</th>
+    </tr>
+    </tbody>
+</table>
+</div>
+
+<div data-role="footer" data-position="fixed">
+<h1>@ViperLokBets</h1>
+<div data-role="navbar">
+<ul>
+<li><a href="#DetalleEquipo1x2">1x2</a></li>
+<li><a href="#DetalleEquipoRachas">Racha</a></li>
+<li><a href="#DetalleEquipoJugadores">Jugadores</a></li>
+</ul>
+</div>
+
+</div>
+</div>
+
+<div id="DetalleEquipoRachas" data-url="DetalleEquipoRachas" data-role="page">
+<div data-role="header">
+<a href="#Home" data-role="button" data-icon="home" data-iconpos="notext"></a>
+<a href="#DetalleEquipoHome" data-role="button" data-icon="arrow-l" data-iconpos="notext"></a>
+<h1>Real Sociedad C. F.</h1>
+</div>
+
+<div data-role="content">
+
+<table data-role="table" id="rachas" data-mode="reflow" BORDER=1 CELLPADDING=3 CELLSPACING=1 align="center">
+  <thead>
+    <tr>
+      <th>Racha</th>
+      <th><abbr title="Partidos Jugados">Ultimos 10 Partidos</abbr></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Total</th>
+      <td>V - V - V - E - E - V - D - E- D - V </td>
+    </tr>
+	<tr>
+      <th>Local</th>
+      <td>V - V - E - D - D - V - V - E- D - V </td>
+    </tr>
+	    <tr>
+      <th>Visitante</th>
+      <td>V - E - V - E - V - E - D - E- D - E </td>
+    </tr>
+    </tbody>
+</table>
+
+</div>
+
+<div data-role="footer" data-position="fixed">
+<h1>@ViperLokBets</h1>
+<div data-role="navbar">
+<ul>
+<li><a href="#DetalleEquipo1x2">1x2</a></li>
+<li><a href="#DetalleEquipoGoles">Goles</a></li>
+<li><a href="#DetalleEquipoJugadores">Jugadores</a></li>
+</ul>
+</div>
+
+</div>
+</div>
+
+<div id="DetalleEquipoJugadores" data-url="DetalleEquipoJugadores" data-role="page">
+<div data-role="header">
+<a href="#Home" data-role="button" data-icon="home" data-iconpos="notext"></a>
+<a href="#DetalleEquipoHome" data-role="button" data-icon="arrow-l" data-iconpos="notext"></a>
+<h1>Real Sociedad C.F</h1>
+</div>
+
+<div data-role="content">
+<table data-role="table" id="jugadores" data-mode="reflow" BORDER=1 CELLPADDING=3 CELLSPACING=1 align="center">
+  <thead>
+    <tr>
+      <th>Jugador</th>
+      <th><abbr title="Partidos Jugados">PJ</abbr></th>
+	  <th><abbr title="Posicion">Pos</abbr></th>
+      <th><abbr title="Goles">G</abbr></th>
+      <th><abbr title="Goles Ultimos 5 partidos">GU5</abbr></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Bravo</th>
+      <td>Por</td>
+	  <td>31</td>
+      <td>36</td>
+      <td>4</td>
+    </tr>
+	<tr>
+      <th>Zubikarai</th>
+      <td>Por</td>
+      <td>7</td>
+      <td>0</td>
+	  <td>0</td>
+    </tr>
+	<tr>
+      <th>C.Martinez</th>
+	  <td>DEF</td>
+      <td>29</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+	<tr>
+      <th>I.Martinez</th>
+	  <td>DEF</td>
+      <td>34</td>
+      <td>4</td>
+      <td>0</td>
+    </tr>
+	<tr>
+      <th>Zurutuza</th>
+	  <td>MED</td>
+      <td>21</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+	<tr>
+      <th>G.Castro</th>
+	  <td>MED</td>
+      <td>31</td>
+      <td>7</td>
+      <td>0</td>
+    </tr>
+		<tr>
+      <th>Griezman</th>
+	  <td>MED</td>
+      <td>34</td>
+      <td>10</td>
+      <td>3</td>
+    </tr>
+		<tr>
+      <th>C.Vela</th>
+	  <td>MED</td>
+      <td>35</td>
+      <td>14</td>
+      <td>4</td>
+    </tr>
+    </tbody>
+</table>
+</div>
+
+<div data-role="footer" data-theme="a" data-position="fixed">
+<h1>@ViperLokBets</h1>
+<div data-role="navbar">
+<ul>
+<li><a href="#DetalleEquipo1x2">1x2</a></li>
+<li><a href="#DetalleEquipoRachas">Rachas</a></li>
+<li><a href="#DetalleEquipoGoles">Goles</a></li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="HotBets" data-url="Consejos" data-role="page">
+
+<div data-role="header">
+<a href="#Home" data-role="button" data-icon="home" data-iconpos="notext"></a>
+
+<h1>¡¡ Hot Bets  !!</h1>
+</div>
+
+<div data-role="content">
+<div data-role="fieldcontain">
+<label for="sel_tw101"></label>
+<select name="sel_tw101" id="sel_tw101" data-native-menu="false" data-mini="true">
+<option value="Deportes">Deportes</option><option value="Futbol">Futbol</option><option value="Tenis">Tenis</option><option value="Baloncesto">Baloncesto</option><option value="Formula 1">Formula 1</option></select>
+</div>
+
+<ul data-role="listview">
+<li><a href="#HotBetDetalle1"><h3>España - Ghana Sub20</h3><p>Resultado España
+Cuota 1.22</p></a></li>
+<li><h3>España - Turquia</h3><p>Resultado España
+Cuota 1.34</p></li>
+<li><h3>Isner - Donskoy</h3><p>Resultado Isner
+Cuota 1.28</p></li>
+</ul>
+
+</div>
+
+<div data-role="footer" data-position="fixed">
+<h1>@ViperLokBets</h1>
+</div>
+</div>
+
+<div id="HotBetDetalle1" data-url="HotBetDetalle1" data-role="page">
+<div data-role="header">
+<a href="#Home" data-role="button" data-icon="home" data-iconpos="notext"></a>
+<a href="#HotBets" data-role="button" data-icon="arrow-l" data-iconpos="notext"></a>
+<h1>HotBet ! Detalle</h1>
+</div>
+
+<div data-role="content">
+
+<ul data-role="listview" data-inset="true">
+<li>España - Ghana SUB20</li>
+<li>FUTBOL</li>
+<li>1.22</li>
+</ul>
+<div data-role="fieldcontain">
+<label for="txt_tw114">Observaciones</label>
+<textarea name="" id="txt_tw114" rows="" cols="">España favorita, se enfrena a Ghana en el 2º partido de la primera fase del Mundial Sub20</textarea>
+</div>
+
+</div>
+
+<div data-role="footer" data-position="fixed">
+<h1>@ViperLokBets</h1>
+</div>
+</div>
+
+<div id="ProximasApuestas" data-url="ProximasApuestas" data-role="page">
+<div data-role="header">
+<a href="#Home" data-role="button" data-icon="home" data-iconpos="notext"></a>
+<h1>Proximas Apuestas</h1>
+</div>
+
+<div data-role="content">
+<div data-role="fieldcontain"  >
+<label for="sel_tw118"></label>
+<select align="top" name="sel_tw118" id="sel_tw118" data-native-menu="false">
+<option value="Deporte">Deporte</option><option value="Futbol">Futbol</option><option value="Baloncesto">Baloncesto</option></select>
+</div>
+
+<ul data-role="listview">
+<li><h3>Francia - USA </h3><p>Futbol  ###
+Sub 20 ###
+1.30 - 5 - 9</p></li>
+<li><h3>España - Ghana</h3><p>Futbol  ###
+Sub 20 ###
+1.30 - 5 - 9</p></li>
+<li><h3>Cuba - Nigeria</h3><p>Futbol  ###
+Sub 20 ###
+1.30 - 5 - 9</p></li>
+<li><h3>Portugal - Corea</h3><p>Futbol  ###
+Sub 20 ###
+1.30 - 5 - 9</p></li>
+</ul>
+
+</div>
+
+<div data-role="footer" data-position="fixed">
+<h1>@ViperLokBets</h1>
+</div>
+</div>
+
+</body>
+</html>
