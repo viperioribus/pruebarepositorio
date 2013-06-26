@@ -13,9 +13,9 @@
 
 <div id="Home" data-url="Home" data-role="page">
 <div data-role="header" data-theme="d">
-<h1>Mundo Apuestas</h1>
+<h1>Mundo Apuestas</h1><?php echo "probando el php con echo <h3>titulo</h3>"; ?>
 </div>
-<h2>Texto mostrado desde el HTML</h2>
+
 <?php
 
 echo "probando el php con echo <h3>titulo</h3>";
