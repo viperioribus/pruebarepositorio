@@ -15,11 +15,14 @@
 <div data-role="header" data-theme="d">
 <h1>Mundo Apuestas</h1>
 </div>
+<div>Texto mostrado desde el HTML</div>
 <?php
 
-print "probando el php";
+echo "probando el php con echo <h3>titulo</h3>";
+print "probando el php con print <h3>titulo</h3>";
 
 ?>
+<div>Texto al final mostrado con html</div>
 </div>
 </body>
 </html>
