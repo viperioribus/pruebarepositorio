@@ -17,7 +17,7 @@
 </div>
 <?php
 
-echo "probando el php";
+print "probando el php";
 
 ?>
 </div>
